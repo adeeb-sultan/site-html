@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="index.js" defer></script>
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+    <link rel="stylesheet" href="styles.css">
+    <title>BanglaOCR-basic</title>
+</head>
+
+<body>
+    <script src="header.js"></script>
+
+    <h2>Bangla OCR - Image to Text</h2>
+    
+    <form id="ocrform">
+        <div id="sel-lang-div">
+            <label for="sel-lang">Select language:</label>
+            <select name="sel-lang" id="sel-lang">
+                <option value="ben" selected>Bangla</option>
+                <option value="eng">English</option>
+                <option value="deu">Deutsch</option>
+            </select> 
+        </div>
+       
+        <div id="img-up-div">
+            <label for="img-up">Select your image:</label>
+            <input type="file" name="img-up" id="img-up" accept="image/*">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>  
+    </form>
+    
+    <div id="tessdiv"></div>    
+</body>
+</html>
