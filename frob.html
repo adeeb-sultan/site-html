@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="frob.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>BanglaOCR-basic > Frob Calc</title>
+</head>
+
+<body>
+    <script src="header.js"></script>
+    
+    <h2>Frobenius Number Calculator</h2>
+    
+    <form id="myForm" autocomplete="off">
+        <label for="inputData">Enter a list of <i>relatively prime</i> integers (comma-separated):</label>
+        <input type="text" id="inputData" name="inputData" pattern="\d{1,9}"></input>
+        
+        <div id="checkboxes">
+            <div>
+                <fieldset id="fs_algos">
+                    <legend>Select Algorithm(s):</legend>
+                    <div>
+                      <input type="checkbox" id="cb_rr" name="algos" value="rr" checked disabled />
+                      <label for="cb_rr">Round Robin</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cb_dqqd" name="algos" value="dqqd" />  
+                        <label for="cb_dqqd">Djisktra Quotient Queue</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cb_bfd" name="algos" value="bfd"/>
+                        <label for="cb_rr">Breadth First</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cb_cirr" name="algos"  value="cirr"/>
+                        <label for="cb_cirr">Integer Recurrence Relation</label>
+                    </div>
+                  </fieldset>
+            </div>
+                
+            <div style="margin-left: 2rem;">
+                <fieldset id="fs_langs">
+                    <legend>Select Language(s): </legend>
+                    <div>
+                      <input type="checkbox" id="cb_cpp" name="langs" value="cpp" checked disabled />
+                      <label for="cb_cpp">C++</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cb_py" name="langs" value="py" />  
+                        <label for="cb_py">Python</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cb_go" name="langs" value="go" />
+                        <label for="cb_go">Go</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cb_java" name="langs" value="java" />
+                        <label for="cb_java">Java</label>
+                    </div>
+                  </fieldset>
+            </div>    
+        </div>
+    </form>
+
+    <button id="pybtn" type="button" onclick="test()">PyTest</button>
+
+    <div id="pydiv"></div> 
+</body>
+</html>

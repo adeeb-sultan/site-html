@@ -1,0 +1,26 @@
+<header>
+    <div class="navbar">
+        <div class="logo">BanglaOCR</div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="frob.html">Other Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+        <a class="about_link" href="about" >About Me</a>
+        <!--
+        <div class="navicon" onclick="toggleNavdrop()"><i class="fa fa-bars" aria-hidden="true"></i></div>    
+        -->
+        <div class="navicon" 
+        onclick="const navdrop = document.querySelector('#navdrop');
+        navdrop.style.display = (navdrop.style.display == 'none') ? 'block' : 'none';">
+        <img src="bars-solid.svg" alt="navicon"></div>
+    </div>
+    <div id="navdrop" style="display: none;">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="frob.html">Other Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a class="about_link" href="about" >About Me</a></li>
+        </ul>
+    </div>
+</header>
